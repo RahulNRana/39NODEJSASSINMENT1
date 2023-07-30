@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NodeJS App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>NodeJS App</h1>
+    <button onclick="getHello()">Get Hello</button>
+    <div id="response"></div>
+
+    <script>
+        function getHello() {
+            $.ajax({
+                url: '/gethello',
+                type: 'GET',
+                success: function(data) {
+                    $('#response').text(data);
+                },
+                error: function(error) {
+                    $('#response').text('Error occurred while fetching data.');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "q10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js",
+    "start": "node server.js",
+    "udfscript1": "node udfscripts/script1.js",
+    "udfscript2": "node udfscripts/script2.js",
+    "udfscript3": "node udfscripts/script3.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
